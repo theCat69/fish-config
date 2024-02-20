@@ -51,6 +51,13 @@ fish_add_path ~/dev/terminal/git-but-better/target/release
 #gitui
 fish_add_path ~/dev/terminal/gitui/target/release
 
+#podman && docker
+alias docker='podman'
+alias docker-compose='podman-compose'
+
+#starship
+starship init fish | source
+
 #zoxide
 builtin cd
 fish_add_path ~/.local/bin
