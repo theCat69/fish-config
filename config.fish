@@ -55,6 +55,14 @@ fish_add_path ~/dev/terminal/gitui/target/release
 alias docker='podman'
 alias docker-compose='podman-compose'
 
+#eza
+alias ls='eza'
+alias ll='eza -l'
+alias lsl='eza -l --sort oldest'
+
+#bat
+alias cat='bat -p'
+
 #starship
 starship init fish | source
 
