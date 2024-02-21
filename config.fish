@@ -57,8 +57,8 @@ alias docker-compose='podman-compose'
 
 #eza
 alias ls='eza'
-alias ll='eza -l'
-alias lsl='eza -l --sort oldest'
+alias ll='eza -la'
+alias lsl='eza -la --sort oldest'
 
 #bat
 alias cat='bat -p'
