@@ -41,6 +41,7 @@ fish_add_path ~/dev/interpreteur_compilateur/node/node-v20.11.1-linux-x64/bin
 
 #user env
 set -gx DEV ~/dev
+set -gx DOTFILES ~/.dotfiles
 
 #go
 fish_add_path /usr/local/go/bin
