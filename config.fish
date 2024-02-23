@@ -11,7 +11,7 @@ set -g fish_greeting ''
 alias vim='nvim'
 
 #python
-alias python='python3'
+fish_add_path  ~/dev/interpreteur_compilateur/python
 
 # rust
 fish_add_path "~/.cargo/env"
@@ -68,6 +68,5 @@ alias cat='bat -p'
 starship init fish | source
 
 #zoxide
-builtin cd
 fish_add_path ~/.local/bin
 zoxide init --cmd cd fish | source
