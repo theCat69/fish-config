@@ -52,6 +52,17 @@ fish_add_path ~/dev/terminal/git-but-better/target/release
 #gitui
 fish_add_path ~/dev/terminal/gitui/target/release
 
+#git aliases
+alias gp='git push'
+alias gpl='git pull'
+alias gplr='git pull --rebase'
+alias gm='git mergetool'
+alias gd='git diff'
+alias grm='git rm'
+alias ga='git add .'
+alias gc='git commit -m'
+alias gi='git init'
+
 #podman && docker
 alias docker='podman'
 alias docker-compose='podman-compose'
@@ -70,3 +81,5 @@ starship init fish | source
 #zoxide
 fish_add_path ~/.local/bin
 zoxide init --cmd cd fish | source
+
+
