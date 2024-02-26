@@ -56,12 +56,14 @@ fish_add_path ~/dev/terminal/gitui/target/release
 alias gp='git push'
 alias gpl='git pull'
 alias gplr='git pull --rebase'
+alias gr='git rebase'
 alias gm='git mergetool'
 alias gd='git diff'
 alias grm='git rm'
 alias ga='git add .'
 alias gc='git commit -m'
 alias gi='git init'
+alias gb='git branch -a'
 
 #podman && docker
 alias docker='podman'
