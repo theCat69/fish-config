@@ -38,6 +38,11 @@ alias ij='idea.sh'
 
 #node
 fish_add_path ~/dev/interpreteur_compilateur/node/node-v20.11.1-linux-x64/bin
+alias npi='npm install'
+alias npid='npm instal --save-dev'
+
+#hardhat
+alias hh='npx hardhat'
 
 #user env
 set -gx DEV ~/dev
