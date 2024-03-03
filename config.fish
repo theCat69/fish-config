@@ -19,6 +19,7 @@ fish_add_path "~/.cargo/env"
 #java
 set -gx JAVA_HOME ~/dev/interpreteur_compilateur/java/jdk-21.0.2
 fish_add_path $JAVA_HOME/bin
+set -gx JAVA_RUNTIMES ~/dev/interpreteur_compilateur/java
 
 #maven
 set -gx MAVEN_HOME ~/dev/interpreteur_compilateur/maven/apache-maven-3.9.6
@@ -80,7 +81,9 @@ alias ll='eza -la'
 alias lsl='eza -la --sort oldest'
 
 #bat
-alias cat='bat -p'
+alias cat='bat --pager=never -p' 
+alias bathelp='bat --plain --language=help' 
+alias fzfb='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"' 
 
 #starship
 starship init fish | source
