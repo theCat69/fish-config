@@ -7,6 +7,9 @@ end
 
 set -g fish_greeting ''
 
+#xclip
+alias clip='xclip -selection clipboard'
+
 #vim
 alias vim='nvim'
 
