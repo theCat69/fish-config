@@ -12,6 +12,7 @@ alias clip='xclip -selection clipboard'
 
 #vim
 alias vim='nvim'
+set -gx NVIM_DATA ~/.local/share/nvim
 
 #python
 fish_add_path  ~/dev/interpreteur_compilateur/python
