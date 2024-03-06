@@ -84,6 +84,9 @@ alias ls='eza'
 alias ll='eza -la'
 alias lsl='eza -la --sort oldest'
 
+#rg
+alias grep='rg'
+
 #bat
 alias cat='bat --pager=never -p' 
 #help with colors
