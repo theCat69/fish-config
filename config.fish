@@ -85,8 +85,17 @@ alias lsl='eza -la --sort oldest'
 
 #bat
 alias cat='bat --pager=never -p' 
-alias bathelp='bat --plain --language=help' 
+#help with colors
+alias bathelp='bat --plain --pager=never --language=help' 
+function help
+    $argv --help 2>&1 | bathelp
+end
+#research by file name with preview
 alias fzfb='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"' 
+#research in file with preview
+function rgb 
+  rg --line-number --no-heading --color=always --smart-case $argv | fzf -d ":" -n 2.. --ansi --no-sort --preview-window "up:40%:+{2}:~7" --preview "bat --style=numbers --color=always --highlight-line {2} {1}"
+end
 
 #starship
 starship init fish | source
