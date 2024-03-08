@@ -5,7 +5,14 @@ end
 if status is-login
 end
 
-set -g fish_greeting ''
+#theme
+set -g theme_nerd_fonts yes
+
+# if string match $OS_THEME "dark" "Dark" "DARK" 
+  #need to do something if dark theme
+# else
+  #need to do something if light theme
+# end
 
 #xclip
 alias clip='xclip -selection clipboard'
