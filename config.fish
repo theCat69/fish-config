@@ -101,6 +101,13 @@ function rgb
   rg --line-number --no-heading --color=always --smart-case $argv | fzf -d ":" -n 2.. --ansi --no-sort --preview-window "up:40%:+{2}:~7" --preview "bat --style=numbers --color=always --highlight-line {2} {1}"
 end
 
+function misp
+  curl -X POST http://localhost:11434/api/generate -d "{
+    \"model\": \"mistral\",
+    \"prompt\": \"Write in a markdown format. $argv\"
+   }" --silent --show-error --no-buffer | jq -s -j '[.][][].response' | nvim -c "set ft=markdown" 
+end
+
 #starship
 starship init fish | source
 
